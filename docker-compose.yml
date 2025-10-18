@@ -1,11 +1,12 @@
 services:
   db:
-    container_name: postgres
+    container_name: postgresservice
     image: postgres:latest
     environment:
-        POSTGRES_USER: r
-        POSTGRES_PASSWORD: w
+        POSTGRES_USER: damian
+        POSTGRES_PASSWORD: password
         PGDATA: /data/postgres
+        POSTGRES_DB: maindb
     volumes:
       - db:/data/postgres
     ports:
