@@ -1,4 +1,17 @@
 services:
+  app:
+    build:
+      context: main-app
+      dockerfile: Dockerfile
+
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    networks:
+      - db
+
+
   db:
     container_name: postgresservice
     image: postgres:latest
