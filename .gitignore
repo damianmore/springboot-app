@@ -15,7 +15,7 @@ main-app/.mvn/wrapper/maven-wrapper.jar
 
 ### IntelliJ IDEA ###
 main-app/.idea
-*.idea
+.idea/
 *.iws
 *.iml
 *.ipr
